@@ -22,6 +22,19 @@ body {
   overflow-x: hidden;
 }
 
+button:focus,
+.btn:focus,
+.btn.focus,
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  text-decoration: none;
+  outline: none;
+  outline: none !important;
+  border-color: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -855,6 +868,90 @@ p {
   margin-bottom: 25px;
 }
 
+
+.about .image img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .about .content {
+    padding-left: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about .content {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .content {
+    margin-top: 40px;
+  }
+}
+
+.about .content .heading {
+  font-size: 31px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  line-height: 45px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about .content .heading {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .content .heading {
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+
+.about .content .heading span {
+  color: #0D41D3;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about .content .single-feature {
+  position: relative;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.about .content .single-feature:last-child {
+  margin: 0;
+}
+
+.about .content .single-feature .f-icon {
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  background-color: #0D41D3;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  font-size: 28px;
+  top: 0;
+}
+
+.about .content .single-feature h4 {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
 .single-department {
   margin-bottom: 55px;
 }
@@ -946,7 +1043,7 @@ p {
 
 .footer {
   padding-top: 350px;
-  background-image: url("../img/footer/footer-bg.svg");
+  background-image: url("../img/footer/footer-new-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
